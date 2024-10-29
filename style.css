@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* =====================================All============================================================ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background-color:black ;
+}
+
+
+#Home{
+    width: 100%;
+    height: 100vh;
+    /* background-color: cadetblue; */
+    transition: all 1s ease-in-out;
+    background-image: url("image/tra2.jpg");
+background-position: center;
+background-repeat: no-repeat;
+   background-size: cover;
+   align-content: center;
+   padding: 50px;
+
+}
+
+#About{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(0, 190, 79); */
+    align-content: center;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+   gap: 100px;
+}
+
+#Profile{
+    min-height: 110vh;
+    /* background: linear-gradient(to right, rgb(4, 16, 2), rgb(1, 30, 1)); */
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#Contact{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(8, 6, 65);
+    padding-top: 20px;
+
+}
+
+
+/* ================================================Home=================================== */
+
+/* ====================================navbar======================================== */
+
+#logoimage{
+    width: 100px;
+}
+
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    height: 110px;
+    width: 100%;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 90px;
+    font-size: 23px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+}
+
+.menu{
+    display: none;
+}
+
+.menu i{
+    font-size: 35px;
+    display: none;
+}
+
+@media(max-width:800px){
+    nav ul{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:675px){
+    nav ul{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+background-color: white;
+gap: 0;
+overflow: hidden;
+transition:all 1s ease-in-out;
+    }
+
+
+    nav ul li{
+        padding: 20px;
+    }
+
+
+    .menu{
+        display: block;
+    }
+
+    .menu i{
+        display: block;
+    }
+}
+
+/* ======================================navbarclose=============================== */
+
+
+/* ======================================textbox========================== */
+.textbox{
+    width: 50%;
+    height: 50%;
+    /* background-color: aliceblue; */
+    float: right;
+text-align: justify;
+justify-items: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ align-content: center;
+ color: rgb(153, 0, 0);
+ display: flex;
+ margin-right: 40px;
+}
+
+.parabox{
+    width: 500px;
+    text-align: left;
+    /* background-color: aquamarine; */
+    
+}
+
+.paraheight{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.textbox h1{
+    font-size: 50px;
+}
+
+.btn1{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    background-color: brown;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.Creative{
+    font-size: 16px;
+}
+
+/* ================================About Us=============== */
+#image2{
+    /* width: 800px; */
+    width: 100%;
+    height: 70%;
+    /* background-color: aqua; */
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+background-image: url(image/trravel.jpeg);
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: 60px;
+/* background-size: cover; */
+}
+
+
+
+.aboutext{
+    /* background-color: beige; */
+    width: 100%;
+    margin-right: 50px;
+    text-align: center;
+    height: 70%;
+margin-top: 60px;
+overflow: scroll;
+color: rgb(255, 255, 255);
+}
+
+.aboutext h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aboutext p{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+}
+
+@media(max-width:1200px){
+    #About{
+
+display: flex;
+    flex-direction: column;
+ gap: 0px;
+
+    }
+
+    #image2{
+width: 80%;
+height: 30%;
+    }
+}
+
+/* ===================Profile================= */
+/* .container{
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(4, 16, 2), rgb(1, 30, 1));
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+
+
+/* .text{
+    
+    flex-basis: 30%;
+}
+
+.write{
+ font-size: 4rem;
+} */
+
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 120px;
+    height: 900px;
+}
+
+.box{
+    display: flex;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    background-position: top;
+    transition: all 1s ease-in-out;
+}
+
+.box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+
+.row-2{
+   grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+@media screen and  (max-width:1024px) {
+    #Profile{
+        flex-direction: column;
+        max-height: fit-content;
+    }
+
+    .gallery{
+        width: 100%;
+        
+    }
+
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+        width: 100%;
+        height: 300px;
+    }
+
+
+}
+
+/* ===========================Contact================== */
+#Contact {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  #map {
+    padding: 0 50px;
+    width: 50%;
+  }
+  
+  .tebox {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  form h1 {
+    color: white;
+    font-size: 2em;
+  }
+  
+  form label {
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  #boxx {
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+  }
+  
+  #secondpard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .brn {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .brn:hover {
+    background-color: #007bff;
+  }
+  
+  @media (max-width: 1380px) {
+    .mapclass {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    #Contact {
+      flex-direction: column;
+    }
+  
+    #map,
+    .mapclass {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .tebox {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
